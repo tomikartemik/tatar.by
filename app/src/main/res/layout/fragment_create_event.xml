@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEvent">
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/date_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="XX.XX.XXXX"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/event_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/event_et"
+        app:layout_constraintTop_toBottomOf="@+id/event_et"
+        app:mask="##.##.####" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Добавить"
+        app:layout_constraintEnd_toEndOf="@+id/text_et"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/text_et"
+        app:layout_constraintTop_toBottomOf="@+id/text_et" />
+
+    <EditText
+        android:id="@+id/event_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:hint="Ваше мероприятие"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Время"
+        app:layout_constraintBottom_toTopOf="@+id/time_et"
+        app:layout_constraintStart_toStartOf="@+id/time_et" />
+
+    <br.com.sapereaude.maskedEditText.MaskedEditText
+        android:id="@+id/time_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="XX:XX"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="@+id/date_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/date_et"
+        app:layout_constraintTop_toBottomOf="@+id/date_et"
+        app:mask="##:##" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Описание"
+        app:layout_constraintBottom_toTopOf="@+id/text_et"
+        app:layout_constraintStart_toStartOf="@+id/text_et" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Дата"
+        app:layout_constraintBottom_toTopOf="@+id/date_et"
+        app:layout_constraintStart_toStartOf="@+id/date_et" />
+
+    <EditText
+        android:id="@+id/text_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Краткое описание вашего мероприятия"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/time_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/time_et"
+        app:layout_constraintTop_toBottomOf="@+id/time_et" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Название"
+        app:layout_constraintBottom_toTopOf="@+id/event_et"
+        app:layout_constraintStart_toStartOf="@+id/event_et" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

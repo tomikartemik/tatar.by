@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:icon="@drawable/ic_baseline_events"
+    android:title="Events"
+    android:id="@+id/events"
+    />
+<item
+    android:icon="@drawable/ic_plus_svgrepo_com"
+    android:title="Create"
+    android:id="@+id/create"
+    />
+<item
+    android:icon="@drawable/ic_baseline_person"
+    android:title="Profile"
+    android:id="@+id/profile"
+    />
+</menu>
