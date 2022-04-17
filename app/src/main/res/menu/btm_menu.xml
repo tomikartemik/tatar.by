@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
     android:icon="@drawable/ic_baseline_events"
-    android:title="Events"
+    android:title="Вакыйгалар"
     android:id="@+id/events"
     />
 <item
     android:icon="@drawable/ic_plus_svgrepo_com"
-    android:title="Create"
+    android:title="Кушу"
     android:id="@+id/create"
     />
 <item
     android:icon="@drawable/ic_baseline_person"
-    android:title="Profile"
+    android:title="Мин"
     android:id="@+id/profile"
     />
 </menu>

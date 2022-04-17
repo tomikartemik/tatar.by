@@ -5,4 +5,5 @@ data class Event(
     val date: String? = null,
     val time: String? = null,
     val text: String? = null,
+    val count: String? = null,
 )

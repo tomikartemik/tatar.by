@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Добавить"
+        android:text="Вакыйга өстәү"
         app:layout_constraintEnd_toEndOf="@+id/text_et"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/text_et"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:ems="10"
-        android:hint="Ваше мероприятие"
+        android:hint="Сезнең вакыйга"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Время"
+        android:text="Вакыт"
         app:layout_constraintBottom_toTopOf="@+id/time_et"
         app:layout_constraintStart_toStartOf="@+id/time_et" />
 
@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Описание"
+        android:text="Тасвирлау"
         app:layout_constraintBottom_toTopOf="@+id/text_et"
         app:layout_constraintStart_toStartOf="@+id/text_et" />
 
@@ -93,7 +93,7 @@
         android:layout_marginTop="48dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Краткое описание вашего мероприятия"
+        android:hint="Сезнең вакыйганың кыскача тасвирламасы"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="@+id/time_et"
         app:layout_constraintHorizontal_bias="0.0"
@@ -105,7 +105,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Название"
+        android:text="Исем"
         app:layout_constraintBottom_toTopOf="@+id/event_et"
         app:layout_constraintStart_toStartOf="@+id/event_et" />
 

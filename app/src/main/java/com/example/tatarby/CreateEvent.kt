@@ -31,7 +31,12 @@ class CreateEvent : Fragment() {
                 val dateFormat: DateFormat = SimpleDateFormat("dd.MM.yyyy", Locale.getDefault())
                 val dateText: String = dateFormat.format(currentDate)
 
-                if(date.substring(0, 2) >= dateText.substring(0, 2) && date.substring(3, 5) >= dateText.substring(3, 5) && date.substring(6, 10) >= dateText.substring(6, 10)){
+                if((date.substring(0, 2).toInt() >= dateText.substring(0, 2).toInt()
+                    && date.substring(3, 5).toInt() >= dateText.substring(3, 5).toInt()
+                    && date.substring(6, 10).toInt() >= dateText.substring(6, 10).toInt())
+                    ||(date.substring(3, 5).toInt() > dateText.substring(3, 5).toInt()
+                            && date.substring(6, 10).toInt() >= dateText.substring(6, 10).toInt())
+                    ||(date.substring(6, 10).toInt() > dateText.substring(6, 10).toInt())){
                     createEvent(event, date, time, text)
                 }
                 create_binding.eventEt.setText("")
@@ -53,6 +58,18 @@ class CreateEvent : Fragment() {
         hashMap.put("time", time)
         hashMap.put("text", text)
 
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        hashMap.put("count", (0..200).random().toString())
+        //hashMap.put("count", "0")
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////////////////////////////////////////////////
         reference!!.child("Events").push().setValue(hashMap)
 
     }

@@ -7,6 +7,7 @@ import com.example.tatarby.databinding.ActivityMainBinding
 import java.text.DateFormat
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.random.Random.Default.nextInt
 
 lateinit var bin: ActivityMainBinding
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bin = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bin.root)
-
         supportFragmentManager.beginTransaction().replace(R.id.frame, Events.newInstance()).commit()
         bin.btmnav.setOnNavigationItemSelectedListener{
             when(it.itemId){
